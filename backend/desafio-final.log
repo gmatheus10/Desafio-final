@@ -1,0 +1,126 @@
+2020-11-14T02:46:55.174Z [desafio-final] info: POST /grade - {"_id":"5faf451eadddb026383197ee","description":"TEST OBJECT","value":11111,"category":"DELETE THIS AFTER TESTING","year":2077,"month":12,"day":31,"yearMonth":"2077-12","yearMonthDay":"2077-12-31","type":"-","__v":0}
+2020-11-14T02:48:14.847Z [desafio-final] info: POST /grade - {
+  "_id": "5faf456e10788526b4659509",
+  "description": "TEST OBJECT",
+  "value": 11111,
+  "category": "DELETE THIS AFTER TESTING",
+  "year": 2077,
+  "month": 12,
+  "day": 31,
+  "yearMonth": "2077-12",
+  "yearMonthDay": "2077-12-31",
+  "type": "-",
+  "__v": 0
+}
+2020-11-14T02:51:34.996Z [desafio-final] info: POST /grade - {
+  "_id": "5faf46362362e72a04eb8f69",
+  "description": "TEST OBJECT",
+  "value": 11111,
+  "category": "DELETE THIS AFTER TESTING",
+  "year": 2077,
+  "month": 12,
+  "day": 31,
+  "yearMonth": "2077-12",
+  "yearMonthDay": "2077-12-31",
+  "type": "-",
+  "lastModified": "2020-11-14T02:51:34.564Z",
+  "__v": 0
+}
+2020-11-14T02:55:19.247Z [desafio-final] info: POST /grade - {
+  "_id": "5faf47172362e72a04eb8f6a",
+  "description": "TEST OBJECT",
+  "value": 11111,
+  "category": "DELETE THIS AFTER TESTING",
+  "year": 2077,
+  "month": 12,
+  "day": 31,
+  "yearMonth": "2077-12",
+  "yearMonthDay": "2077-12-31",
+  "type": "-",
+  "lastModified": "2020-11-14T02:55:19.140Z",
+  "__v": 0
+}
+2020-11-14T18:37:55.614Z [desafio-final] info: DELETE /grade - 5faf47172362e72a04eb8f6a
+2020-11-14T20:20:34.475Z [desafio-final] error: GET /grade - "studentModel is not defined"
+2020-11-14T20:24:29.591Z [desafio-final] info: GET /grade
+2020-11-14T20:24:35.934Z [desafio-final] info: GET /grade
+2020-11-14T20:24:45.786Z [desafio-final] info: GET /grade
+2020-11-14T20:32:19.539Z [desafio-final] info: GET /grade
+2020-11-14T20:32:44.212Z [desafio-final] info: GET /grade
+2020-11-14T20:32:57.275Z [desafio-final] info: GET /grade
+2020-11-14T20:33:09.688Z [desafio-final] info: GET /grade
+2020-11-14T20:44:10.783Z [desafio-final] info: POST /grade - {
+  "_id": "5fb0419a55ccc010b8fe7a94",
+  "description": "TEST OBJECT",
+  "value": 11111,
+  "category": "DELETE THIS AFTER TESTING",
+  "year": 2077,
+  "month": 12,
+  "day": 31,
+  "yearMonth": "2077-12",
+  "yearMonthDay": "2077-12-31",
+  "type": "-",
+  "lastModified": "2020-11-14T20:44:10.321Z",
+  "__v": 0
+}
+2020-11-14T20:45:02.310Z [desafio-final] info: GET /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T20:45:10.850Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T21:27:32.454Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T21:27:54.202Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T21:27:55.441Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T21:27:56.259Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T21:28:50.058Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T21:28:55.753Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T21:28:56.439Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T21:28:57.030Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T21:28:57.609Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T21:28:58.233Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T21:36:25.774Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T21:36:47.696Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T21:38:19.749Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T22:56:23.793Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T22:57:24.423Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T22:57:44.885Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T22:58:22.475Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T22:58:53.761Z [desafio-final] info: DELETE /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T23:18:07.011Z [desafio-final] info: GET /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T23:19:11.176Z [desafio-final] info: GET /grade - 5fb0419a55ccc010b8fe7a94
+2020-11-14T23:20:25.001Z [desafio-final] error: GET /grade - "Registro não existente"
+2020-11-14T23:20:54.026Z [desafio-final] error: GET /grade - ""
+2020-11-14T23:21:15.394Z [desafio-final] error: GET /grade - ""
+2020-11-14T23:36:23.651Z [desafio-final] error: GET /grade - "Registro nao encontrado"
+2020-11-14T23:39:40.230Z [desafio-final] error: DELETE /grade - "Registro não encontrado"
+2020-11-14T23:39:52.322Z [desafio-final] info: POST /grade - {
+  "_id": "5fb06ac8673a75284cbe4e26",
+  "description": "TEST OBJECT",
+  "value": 11111,
+  "category": "DELETE THIS AFTER TESTING",
+  "year": 2077,
+  "month": 12,
+  "day": 31,
+  "yearMonth": "2077-12",
+  "yearMonthDay": "2077-12-31",
+  "type": "-",
+  "lastModified": "2020-11-14T23:39:52.185Z",
+  "__v": 0
+}
+2020-11-14T23:39:58.101Z [desafio-final] info: DELETE /grade - 5fb06ac8673a75284cbe4e26
+2020-11-15T00:17:50.143Z [desafio-final] error: DELETE /transaction - "Registro não encontrado"
+2020-11-15T00:17:53.225Z [desafio-final] info: POST /transaction - {
+  "_id": "5fb073b19530a811d893f651",
+  "description": "TEST OBJECT",
+  "value": 11111,
+  "category": "DELETE THIS AFTER TESTING",
+  "year": 2077,
+  "month": 12,
+  "day": 31,
+  "yearMonth": "2077-12",
+  "yearMonthDay": "2077-12-31",
+  "type": "-",
+  "lastModified": "2020-11-15T00:17:53.076Z",
+  "__v": 0
+}
+2020-11-15T00:21:56.644Z [desafio-final] info: GET /transaction - 5fb073b19530a811d893f651
+2020-11-15T00:22:33.062Z [desafio-final] info: GET /transaction
+2020-11-15T00:22:36.801Z [desafio-final] info: GET /transaction - 5fb073b19530a811d893f651
+2020-11-15T00:24:13.934Z [desafio-final] info: PATCH /transaction - 5fb073b19530a811d893f651 - {"_id":"5fb073b19530a811d893f651","description":"TEST OBJECT","value":11111,"category":"DELETE THIS AFTER TESTING","year":2077,"month":12,"day":31,"yearMonth":"2077-12","yearMonthDay":"2077-12-31","type":"-","lastModified":"2020-11-15T00:17:53.076Z","__v":0}
