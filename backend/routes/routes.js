@@ -4,6 +4,7 @@ const router = express.Router();
 const transService = require("../services/transactionService.js");
 
 router.get("/findTransactions", transService.find);
+router.get("/", transService.getPeriods);
 router.get("/findOneTransaction/:id", transService.findOne);
 router.post("/newTransaction", transService.create);
 router.put("/updateTransaction/:id", transService.update);

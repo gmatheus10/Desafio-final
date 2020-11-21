@@ -1,0 +1,23 @@
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-justify: center;
+	text-align: center;
+	background-color: #8c1010;
+	color: white;
+	padding: 25px;
+}
+.body {
+	background-color: #062839;
+}
+.footer {
+	position: static;
+	left: 0;
+	bottom: 0;
+	background-color: #dca958;
+	color: #8c1010;
+	text-align: center;
+	padding: 10vh;
+	font-size: 24px;
+}

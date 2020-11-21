@@ -48,6 +48,23 @@ const findOne = async (req, res) => {
 		logger.error(`GET /transaction - ${JSON.stringify(error.message)}`);
 	}
 };
+//GET ALL PERIODS
+const getPeriods = async (req, res) => {
+	try {
+		const Transaction = await TransactionModel.find({});
+		let periods = Transaction.map((tran) => {
+			return tran.yearMonth;
+		});
+		periods = periods.filter((tran, index) => {
+			return periods.indexOf(tran) === index;
+		});
+		res.send(JSON.stringify(periods));
+	} catch (error) {
+		res
+			.status(500)
+			.send({ message: "Erro ao buscar os períodos " + error.message });
+	}
+};
 //CREATE NEW TRANSACTION
 const create = async (req, res) => {
 	try {
@@ -156,4 +173,13 @@ const deleteAll = async (req, res) => {
 		logger.error(`DELETE /transaction - ${JSON.stringify(error.message)}`);
 	}
 };
-module.exports = { create, remove, find, findOne, update, correct, deleteAll };
+module.exports = {
+	create,
+	remove,
+	find,
+	findOne,
+	update,
+	correct,
+	deleteAll,
+	getPeriods,
+};
