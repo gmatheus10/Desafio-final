@@ -11,6 +11,10 @@ function Details(props) {
 					<p className={`${style.description}`}>{description}</p>
 				</div>
 				<div className={`${style.value}`}>{numberFormat.format(value)}</div>
+				<div className={style.editDelete}>
+					<button>edit</button>
+					<button>delete</button>
+				</div>
 			</div>
 		</li>
 	);
