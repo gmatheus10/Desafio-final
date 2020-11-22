@@ -112,7 +112,7 @@ function NewTransaction() {
 							</div>
 							<div className={style.date}>
 								<input type='date' id='date' required></input>
-								<label htmlfor='date'>Data da transação</label>
+								<label htmlFor='date'>Data da transação</label>
 							</div>
 							<div className={style.submit}>
 								{status === 200 ? (

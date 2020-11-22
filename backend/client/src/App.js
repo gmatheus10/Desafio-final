@@ -7,7 +7,7 @@ import style from "./App.module.css";
 export default function App() {
 	const [periods, setPeriods] = useState([]);
 	const [transactions, setTransactions] = useState([]);
-
+	const [loadSelect, setLoadSelect] = useState(false);
 	const numberFormat = new Intl.NumberFormat("pt-BR", {
 		style: "currency",
 		currency: "BRL",
@@ -17,6 +17,7 @@ export default function App() {
 		(async () => {
 			const data = await endPoints.getPeriods();
 			setPeriods(data);
+			setLoadSelect(true);
 		})();
 	}, []);
 
@@ -34,7 +35,11 @@ export default function App() {
 				<h1 className={style.title}>Desafio Final do Bootcamp Full Stack</h1>
 			</header>
 
-			<SelectPeriod periods={periods} onPeriodChange={handlePeriodChange} />
+			<SelectPeriod
+				periods={periods}
+				onPeriodChange={handlePeriodChange}
+				load={loadSelect}
+			/>
 
 			<Transactions transactions={transactions} numberFormat={numberFormat} />
 

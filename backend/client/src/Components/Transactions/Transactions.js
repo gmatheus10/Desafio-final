@@ -17,7 +17,6 @@ function Transactions(props) {
 	///////////////////////////////////////////////////
 
 	const handleTransactionFilter = (event) => {
-		console.log("object");
 		let filteredTransactions = transactions.filter((el) => {
 			return (
 				removeDiacritics(el.description)
