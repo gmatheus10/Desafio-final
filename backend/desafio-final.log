@@ -876,3 +876,19 @@
 2020-11-22T14:40:16.580Z [desafio-final] info: GET /transaction
 2020-11-22T14:41:12.363Z [desafio-final] info: GET /transaction
 2020-11-22T14:41:48.523Z [desafio-final] info: GET /transaction
+2020-11-23T03:41:14.181Z [desafio-final] info: POST /transaction - {
+  "_id": "5fbb2f5a13b5c72b043a970e",
+  "description": "a",
+  "value": 1,
+  "category": "a",
+  "year": 2020,
+  "month": 11,
+  "day": 9,
+  "yearMonth": "2020-11",
+  "yearMonthDay": "2020-11-09",
+  "type": "-",
+  "lastModified": "2020-11-23T03:41:14.089Z",
+  "__v": 0
+}
+2020-11-23T03:42:54.451Z [desafio-final] info: DELETE /transaction - 5fbb2f5a13b5c72b043a970e
+2020-11-24T03:45:31.170Z [desafio-final] info: GET /transaction

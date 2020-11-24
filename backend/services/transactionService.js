@@ -71,7 +71,7 @@ const create = async (req, res) => {
 		const newTransaction = new TransactionModel(req.body);
 		newTransaction.save((err) => {
 			if (err) {
-				return next(err);
+				throw new Error(err.message);
 			} else {
 				res.send(newTransaction);
 				logger.info(

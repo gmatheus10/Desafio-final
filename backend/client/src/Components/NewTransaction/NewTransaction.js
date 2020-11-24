@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import style from "./NewTransaction.module.css";
 import endPoints from "../../http/Requests.js";
-
+import inputs from "./inputs.json";
+import Form from "../Form/Form.js";
+import Popup from "../Popup/Popup";
 function NewTransaction() {
 	const [popup, setPopup] = useState(false);
 	const [status, setStatus] = useState(404);
@@ -12,7 +14,7 @@ function NewTransaction() {
 	///////////////////////////////////////////////////////
 	const handleNewTransaction = (event) => {
 		event.preventDefault();
-
+		console.log(event);
 		const despesa = event.target[0];
 		const receita = event.target[1];
 		const desc = event.target[2].value;
@@ -70,37 +72,54 @@ function NewTransaction() {
 				Nova Transação
 			</button>
 			{popup ? (
-				<div className={`${style.popupContainer}`}>
-					<div className={`${style.popup}`}>
-						<div className={style.closeMe}>
-							<button onClick={handlePopupChange}>X</button>
-						</div>
-						<div className={style.title}>
-							<span>Inserir nova transação</span>
-						</div>
-						<form onSubmit={handleNewTransaction} className={style.subGrid}>
-							<div className={style.popupRadio}>
-								<label>
+				<Popup
+					title={"Inserir novo registro"}
+					content={
+						<Form
+							status={status}
+							inputs={inputs}
+							submit={handleNewTransaction}
+						/>
+					}
+					onPopupChange={handlePopupChange}
+				/>
+			) : null}
+			{/* ////////////////FORM CONTENT////////////////////// */}
+			{/* ///////////////////////////////////////////// */}
+			{/* <form onSubmit={handleNewTransaction} className={style.subGrid}> */}
+
+			{/* ////////////////INPUTS RADIO////////////////////// */}
+			{/* ///////////////////////////////////////////// */}
+			{/* <div className={style.popupRadio}> */}
+			{/* <label>
 									<input name='group1' type='radio' defaultChecked />
 									<span>Despesa</span>
 								</label>
 								<label>
 									<input name='group1' type='radio' />
 									<span>Receita</span>
-								</label>
-								{/* ///////////////////////////////////////////// */}
-							</div>
-							<div className={style.desc}>
+								</label> */}
+			{/* </div> */}
+
+			{/* //////////////////INPUTS TEXT/////////////////////// */}
+			{/* ///////////////////////////////////////////// */}
+
+			{/* <div className={style.desc}>
 								<input placeholder='Descrição' id='Descrição' required></input>
 								<label htmlFor='Descrição'>Descrição da transação</label>
-								{/* ///////////////////////////////////////////// */}
-							</div>
-							<div className={style.categ}>
+							</div> */}
+
+			{/* ///////////////////////////////////////////// */}
+
+			{/* <div className={style.categ}>
 								<input placeholder='Categoria' id='Categoria' required></input>
 								<label htmlFor='Categoria'>Categoria</label>
-								{/* ///////////////////////////////////////////// */}
-							</div>
-							<div className={style.val}>
+							</div> */}
+
+			{/* //////////////////INPUTS NUMBER////////////////////// */}
+			{/* ///////////////////////////////////////////// */}
+
+			{/* <div className={style.val}>
 								<input
 									type='number'
 									min='0'
@@ -108,23 +127,17 @@ function NewTransaction() {
 									id='Valor'
 									required></input>
 								<label htmlFor='Valor'>Valor</label>
-								{/* ///////////////////////////////////////////// */}
-							</div>
-							<div className={style.date}>
+							</div> */}
+
+			{/* /////////////////INPUTS DATE/////////////////////// */}
+			{/* ///////////////////////////////////////////// */}
+			{/* <div className={style.date}>
 								<input type='date' id='date' required></input>
 								<label htmlFor='date'>Data da transação</label>
-							</div>
-							<div className={style.submit}>
-								{status === 200 ? (
-									<span>Registro inserido com sucesso</span>
-								) : (
-									<button type='submit'>Submit</button>
-								)}
-							</div>
-						</form>
-					</div>
-				</div>
-			) : null}
+							</div> */}
+			{/* ///////////////////////////////////////////// */}
+
+			{/* ///////////////////////////////////////////// */}
 		</div>
 	);
 }
