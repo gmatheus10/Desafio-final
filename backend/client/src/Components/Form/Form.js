@@ -15,6 +15,8 @@ function Form(props) {
 							type={el.type}
 							name={el.group ? el.group : el.type}
 							placeholder={el.type === "text" ? el.label : null}
+							defaultChecked={el.type === "radio" ? el.checked : null}
+							defaultValue={el.value ? el.value : null}
 							required></input>
 						<label htmlFor={el.id}> {el.label} </label>
 					</div>

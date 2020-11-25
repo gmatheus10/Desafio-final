@@ -12,7 +12,6 @@ export default function App() {
 		style: "currency",
 		currency: "BRL",
 	});
-
 	useEffect(() => {
 		(async () => {
 			const data = await endPoints.getPeriods();

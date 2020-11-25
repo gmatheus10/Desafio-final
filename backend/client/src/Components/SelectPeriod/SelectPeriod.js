@@ -16,13 +16,14 @@ function SelectPeriod(props) {
 			event.target.previousSibling !== null
 				? event.target.previousSibling
 				: event.target.nextSibling;
-
-		if (direction.includes(">")) {
+		if (
+			direction.includes(">") &&
+			period.selectedIndex !== period.childNodes.length - 1
+		) {
 			period.selectedIndex += 1;
-		} else if (direction.includes("<")) {
+		} else if (direction.includes("<") && period.selectedIndex !== 0) {
 			period.selectedIndex -= 1;
 		}
-		console.log(period.value);
 
 		passPeriod(null, period.value);
 	};

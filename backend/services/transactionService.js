@@ -20,7 +20,11 @@ const find = async (req, res) => {
 		: {};
 
 	try {
-		const Transaction = await TransactionModel.find(condition);
+		const Transaction = await TransactionModel.find(condition).sort({
+			year: "asc",
+			month: "asc",
+			day: "asc",
+		});
 		logger.info(`GET /transaction`);
 		res.send(Transaction);
 	} catch (error) {
@@ -39,8 +43,14 @@ const findOne = async (req, res) => {
 		if (!Transaction) {
 			throw new Error("Registro nao encontrado");
 		} else {
-			res.send(Transaction);
-
+			const resTran = {
+				type: Transaction.type,
+				description: Transaction.description,
+				category: Transaction.category,
+				value: Transaction.value,
+				yearMonthDay: Transaction.yearMonthDay,
+			};
+			res.send(resTran);
 			logger.info(`GET /transaction - ${id}`);
 		}
 	} catch (error) {
@@ -51,7 +61,11 @@ const findOne = async (req, res) => {
 //GET ALL PERIODS
 const getPeriods = async (req, res) => {
 	try {
-		const Transaction = await TransactionModel.find({});
+		const Transaction = await TransactionModel.find({}).sort({
+			year: "asc",
+			month: "asc",
+			day: "asc",
+		});
 		let periods = Transaction.map((tran) => {
 			return tran.yearMonth;
 		});

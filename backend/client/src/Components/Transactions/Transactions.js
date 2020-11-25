@@ -3,7 +3,7 @@ import Details from "./Details/Details";
 import { removeDiacritics } from "../../helpers/AccentStrip.js";
 import Summary from "./Summary/Summary";
 import style from "./Transactions.module.css";
-import NewTransaction from "../NewTransaction/NewTransaction";
+import NewTransaction from "./NewTransaction/NewTransaction";
 
 function Transactions(props) {
 	const { transactions, numberFormat } = props;
@@ -27,12 +27,13 @@ function Transactions(props) {
 		});
 		setFilter(filteredTransactions);
 	};
+	const onStatusChange = async (status) => {
+		setFilter(await status);
+	};
 	///////////////////////////////////////////////////
 	return (
 		<div>
-			{/* <div className={`${style.inputContainer}`}> */}
 			<div className={style.inputContainer}>
-				{/* <div className={`${style.input}`}> */}
 				<div>
 					<NewTransaction />
 				</div>
@@ -47,21 +48,36 @@ function Transactions(props) {
 			</div>
 			<div>
 				<ul className={style.ulDetails}>
-					{filter.map(({ category, day, description, value, _id }) => {
-						return (
-							<Details
-								properties={{
-									category,
-									day,
-									description,
-									value,
-									_id,
-									numberFormat,
-								}}
-								key={_id}
-							/>
-						);
-					})}
+					{filter.map(
+						({
+							category,
+							day,
+							description,
+							value,
+							_id,
+							type,
+							yearMonthDay,
+							yearMonth,
+						}) => {
+							return (
+								<Details
+									changeStatus={onStatusChange}
+									properties={{
+										category,
+										day,
+										description,
+										value,
+										_id,
+										numberFormat,
+										yearMonthDay,
+										yearMonth,
+										type,
+									}}
+									key={_id}
+								/>
+							);
+						}
+					)}
 				</ul>
 			</div>
 		</div>

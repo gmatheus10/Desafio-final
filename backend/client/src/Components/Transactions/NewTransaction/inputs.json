@@ -10,7 +10,8 @@
 		"type": "radio",
 		"group": "group1",
 		"id": "receita",
-		"label": "Receita"
+		"label": "Receita",
+		"defaultChecked": false
 	},
 	{
 		"type": "text",

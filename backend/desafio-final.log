@@ -892,3 +892,222 @@
 }
 2020-11-23T03:42:54.451Z [desafio-final] info: DELETE /transaction - 5fbb2f5a13b5c72b043a970e
 2020-11-24T03:45:31.170Z [desafio-final] info: GET /transaction
+2020-11-24T15:32:56.259Z [desafio-final] info: GET /transaction
+2020-11-24T18:12:12.010Z [desafio-final] info: GET /transaction
+2020-11-24T18:41:26.540Z [desafio-final] info: GET /transaction
+2020-11-24T18:45:05.677Z [desafio-final] info: GET /transaction
+2020-11-24T18:45:47.229Z [desafio-final] info: GET /transaction
+2020-11-24T18:46:01.169Z [desafio-final] info: GET /transaction
+2020-11-24T18:48:05.457Z [desafio-final] info: GET /transaction
+2020-11-24T19:08:11.995Z [desafio-final] error: GET /transaction - "Registro nao encontrado"
+2020-11-24T19:08:24.823Z [desafio-final] info: GET /transaction - 5faec4b331be4e317033f2ba
+2020-11-24T19:11:39.624Z [desafio-final] info: GET /transaction - 5faec4b331be4e317033f2ba
+2020-11-24T20:05:53.580Z [desafio-final] info: GET /transaction
+2020-11-24T20:07:06.687Z [desafio-final] info: GET /transaction
+2020-11-24T20:08:55.375Z [desafio-final] info: GET /transaction
+2020-11-24T20:09:06.785Z [desafio-final] info: GET /transaction
+2020-11-24T20:35:26.142Z [desafio-final] info: GET /transaction
+2020-11-24T20:35:58.824Z [desafio-final] info: GET /transaction
+2020-11-24T20:47:43.460Z [desafio-final] info: GET /transaction
+2020-11-24T20:49:29.860Z [desafio-final] info: GET /transaction
+2020-11-24T20:50:05.447Z [desafio-final] info: GET /transaction
+2020-11-24T20:50:47.906Z [desafio-final] info: GET /transaction
+2020-11-24T20:51:21.480Z [desafio-final] info: GET /transaction
+2020-11-24T21:01:55.407Z [desafio-final] info: GET /transaction
+2020-11-24T21:02:39.498Z [desafio-final] info: GET /transaction
+2020-11-24T21:13:57.929Z [desafio-final] info: GET /transaction
+2020-11-24T21:14:00.796Z [desafio-final] info: GET /transaction
+2020-11-24T21:15:15.131Z [desafio-final] info: GET /transaction
+2020-11-24T21:15:20.128Z [desafio-final] info: GET /transaction
+2020-11-24T21:16:03.848Z [desafio-final] info: PATCH /transaction - 5fb073b19530a811d893f651 - null
+2020-11-24T21:17:41.454Z [desafio-final] info: PATCH /transaction - 5fb073b19530a811d893f651 - null
+2020-11-24T21:18:19.049Z [desafio-final] info: GET /transaction
+2020-11-24T21:18:23.055Z [desafio-final] info: GET /transaction
+2020-11-24T21:18:24.094Z [desafio-final] info: GET /transaction
+2020-11-24T21:18:25.243Z [desafio-final] info: GET /transaction
+2020-11-24T21:18:28.128Z [desafio-final] info: GET /transaction
+2020-11-24T21:19:01.179Z [desafio-final] info: GET /transaction
+2020-11-24T21:19:03.489Z [desafio-final] info: GET /transaction
+2020-11-24T21:19:06.068Z [desafio-final] info: GET /transaction
+2020-11-24T21:19:10.817Z [desafio-final] info: GET /transaction
+2020-11-24T21:19:18.226Z [desafio-final] info: GET /transaction
+2020-11-24T21:19:36.048Z [desafio-final] info: GET /transaction
+2020-11-24T21:19:36.284Z [desafio-final] info: GET /transaction
+2020-11-24T21:19:43.461Z [desafio-final] info: GET /transaction
+2020-11-24T21:19:45.176Z [desafio-final] info: GET /transaction
+2020-11-24T21:19:55.226Z [desafio-final] info: GET /transaction
+2020-11-24T21:20:07.639Z [desafio-final] info: GET /transaction
+2020-11-24T21:20:12.157Z [desafio-final] info: GET /transaction
+2020-11-24T21:20:37.594Z [desafio-final] info: GET /transaction
+2020-11-24T21:24:52.336Z [desafio-final] info: GET /transaction
+2020-11-24T21:24:54.896Z [desafio-final] info: GET /transaction
+2020-11-24T21:24:57.496Z [desafio-final] info: GET /transaction
+2020-11-24T21:24:58.561Z [desafio-final] info: GET /transaction
+2020-11-24T21:24:59.285Z [desafio-final] info: GET /transaction
+2020-11-24T21:25:02.496Z [desafio-final] info: GET /transaction
+2020-11-24T22:06:45.947Z [desafio-final] info: GET /transaction
+2020-11-24T22:07:04.524Z [desafio-final] info: GET /transaction
+2020-11-24T22:19:08.908Z [desafio-final] info: POST /transaction - {
+  "_id": "5fbd86dcae6eba23148b36fe",
+  "description": "DELETE",
+  "value": 1,
+  "category": "DELETE REALLY",
+  "year": 2018,
+  "month": 5,
+  "day": 1,
+  "yearMonth": "2018-05",
+  "yearMonthDay": "2018-05-01",
+  "type": "-",
+  "lastModified": "2020-11-24T22:19:08.327Z",
+  "__v": 0
+}
+2020-11-24T22:19:16.249Z [desafio-final] info: GET /transaction
+2020-11-24T22:19:20.024Z [desafio-final] info: GET /transaction
+2020-11-24T22:19:29.413Z [desafio-final] info: GET /transaction
+2020-11-24T22:22:01.831Z [desafio-final] info: GET /transaction
+2020-11-24T22:22:11.160Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE REALLY","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-24T22:24:44.471Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THIS AFTER TESTING","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-24T22:25:28.620Z [desafio-final] info: GET /transaction
+2020-11-24T22:25:35.418Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THIS AFTER TESTING","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T00:07:48.138Z [desafio-final] info: GET /transaction
+2020-11-25T00:56:31.518Z [desafio-final] info: GET /transaction
+2020-11-25T01:00:35.287Z [desafio-final] info: GET /transaction
+2020-11-25T01:00:38.021Z [desafio-final] info: GET /transaction
+2020-11-25T01:00:43.974Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THIS AFTER TESTING","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:00:46.110Z [desafio-final] info: GET /transaction
+2020-11-25T01:01:34.069Z [desafio-final] info: GET /transaction
+2020-11-25T01:01:41.836Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THIS AFTER TESTING","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:01:43.978Z [desafio-final] info: GET /transaction
+2020-11-25T01:07:29.151Z [desafio-final] info: GET /transaction
+2020-11-25T01:07:33.586Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THIS AFTER TESTING","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:07:35.701Z [desafio-final] info: GET /transaction
+2020-11-25T01:08:50.828Z [desafio-final] info: GET /transaction
+2020-11-25T01:08:56.900Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THIS AFTER TESTING","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:08:59.001Z [desafio-final] info: GET /transaction
+2020-11-25T01:09:13.115Z [desafio-final] info: GET /transaction
+2020-11-25T01:11:13.389Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THIS AFTER TESTING","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:11:20.170Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THIS  TESTING","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:11:28.666Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THIS AFTER TESTING","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:11:40.596Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THIS AFTER TESTING","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:11:42.716Z [desafio-final] info: GET /transaction
+2020-11-25T01:12:01.588Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THIS AFTER TESTING","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:12:03.670Z [desafio-final] info: GET /transaction
+2020-11-25T01:12:50.971Z [desafio-final] info: GET /transaction
+2020-11-25T01:12:53.861Z [desafio-final] info: GET /transaction
+2020-11-25T01:13:10.555Z [desafio-final] info: GET /transaction - 5fbd86dcae6eba23148b36fe
+2020-11-25T01:13:17.979Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THIS AFTER TESTING","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:13:20.086Z [desafio-final] info: GET /transaction
+2020-11-25T01:13:54.080Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THIS AFTER TESTING","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:13:56.205Z [desafio-final] info: GET /transaction
+2020-11-25T01:15:06.232Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THIS AFTER TESTING","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:15:08.329Z [desafio-final] info: GET /transaction
+2020-11-25T01:15:33.062Z [desafio-final] info: GET /transaction
+2020-11-25T01:15:37.700Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THIS AFTER TESTING","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:15:39.925Z [desafio-final] info: GET /transaction
+2020-11-25T01:16:32.228Z [desafio-final] info: GET /transaction
+2020-11-25T01:16:34.310Z [desafio-final] info: GET /transaction
+2020-11-25T01:16:37.936Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THIS AFTER TESTING","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:16:50.521Z [desafio-final] info: GET /transaction
+2020-11-25T01:17:24.912Z [desafio-final] info: GET /transaction
+2020-11-25T01:17:33.455Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THIS AFTER TESTING","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:17:35.743Z [desafio-final] info: GET /transaction
+2020-11-25T01:18:18.264Z [desafio-final] info: GET /transaction
+2020-11-25T01:18:24.804Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THIS AFTER TESTING","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:18:26.952Z [desafio-final] info: GET /transaction
+2020-11-25T01:19:16.880Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE THI","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:47:46.271Z [desafio-final] info: GET /transaction
+2020-11-25T01:47:51.514Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:47:53.628Z [desafio-final] info: GET /transaction
+2020-11-25T01:48:00.921Z [desafio-final] info: GET /transaction
+2020-11-25T01:48:02.786Z [desafio-final] info: GET /transaction
+2020-11-25T01:48:10.663Z [desafio-final] info: GET /transaction
+2020-11-25T01:50:05.757Z [desafio-final] info: GET /transaction
+2020-11-25T01:50:09.322Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:50:11.438Z [desafio-final] info: GET /transaction
+2020-11-25T01:51:10.463Z [desafio-final] info: GET /transaction
+2020-11-25T01:51:44.460Z [desafio-final] info: GET /transaction
+2020-11-25T01:51:54.894Z [desafio-final] info: GET /transaction
+2020-11-25T01:52:28.101Z [desafio-final] info: GET /transaction
+2020-11-25T01:52:37.960Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE this","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:53:19.973Z [desafio-final] info: GET /transaction
+2020-11-25T01:53:26.348Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE this aaaa","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:58:06.828Z [desafio-final] info: GET /transaction
+2020-11-25T01:58:12.246Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T01:58:23.138Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE aham","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T02:00:49.607Z [desafio-final] info: GET /transaction
+2020-11-25T02:01:06.436Z [desafio-final] info: GET /transaction
+2020-11-25T02:01:24.821Z [desafio-final] info: GET /transaction
+2020-11-25T02:01:30.562Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T02:01:44.534Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"+","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T02:05:05.178Z [desafio-final] info: GET /transaction
+2020-11-25T02:08:05.845Z [desafio-final] info: GET /transaction
+2020-11-25T02:08:17.984Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE this","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"+","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T02:30:35.802Z [desafio-final] info: GET /transaction
+2020-11-25T02:30:40.208Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE ","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"+","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T02:30:42.337Z [desafio-final] info: GET /transaction
+2020-11-25T02:30:42.340Z [desafio-final] info: GET /transaction
+2020-11-25T02:31:19.545Z [desafio-final] info: GET /transaction
+2020-11-25T02:31:25.631Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE this","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"+","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T02:31:27.799Z [desafio-final] info: GET /transaction
+2020-11-25T02:31:27.803Z [desafio-final] info: GET /transaction
+2020-11-25T02:31:36.345Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE this","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T02:31:38.434Z [desafio-final] info: GET /transaction
+2020-11-25T02:31:38.445Z [desafio-final] info: GET /transaction
+2020-11-25T02:44:45.616Z [desafio-final] info: GET /transaction
+2020-11-25T02:44:50.712Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T02:45:01.305Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":1,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"+","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T02:45:12.275Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":12,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"+","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T02:46:40.067Z [desafio-final] info: GET /transaction
+2020-11-25T02:46:43.864Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":12,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T02:47:07.401Z [desafio-final] info: GET /transaction
+2020-11-25T02:47:13.313Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":12,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"+","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T02:49:12.748Z [desafio-final] info: GET /transaction
+2020-11-25T02:49:47.655Z [desafio-final] info: GET /transaction
+2020-11-25T02:50:01.494Z [desafio-final] info: GET /transaction
+2020-11-25T02:50:04.857Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":12,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T02:50:04.951Z [desafio-final] info: GET /transaction
+2020-11-25T02:54:21.559Z [desafio-final] info: GET /transaction
+2020-11-25T02:54:57.516Z [desafio-final] info: GET /transaction
+2020-11-25T02:56:39.389Z [desafio-final] info: GET /transaction
+2020-11-25T02:56:40.525Z [desafio-final] info: GET /transaction
+2020-11-25T02:56:42.886Z [desafio-final] info: GET /transaction
+2020-11-25T02:57:05.253Z [desafio-final] info: GET /transaction
+2020-11-25T02:57:22.045Z [desafio-final] info: GET /transaction
+2020-11-25T02:57:22.922Z [desafio-final] info: GET /transaction
+2020-11-25T03:03:35.738Z [desafio-final] info: GET /transaction
+2020-11-25T03:10:50.153Z [desafio-final] info: GET /transaction
+2020-11-25T03:10:53.799Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":12,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"+","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T03:10:53.971Z [desafio-final] info: GET /transaction
+2020-11-25T03:11:48.494Z [desafio-final] info: GET /transaction
+2020-11-25T03:11:51.657Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":12,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T03:11:53.786Z [desafio-final] info: GET /transaction
+2020-11-25T03:11:53.815Z [desafio-final] info: GET /transaction
+2020-11-25T03:12:20.280Z [desafio-final] info: GET /transaction
+2020-11-25T03:12:24.021Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":12,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"+","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T03:12:27.219Z [desafio-final] info: GET /transaction
+2020-11-25T03:12:27.565Z [desafio-final] info: GET /transaction
+2020-11-25T03:12:32.955Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":12,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T03:12:36.426Z [desafio-final] info: GET /transaction
+2020-11-25T03:12:36.778Z [desafio-final] info: GET /transaction
+2020-11-25T03:14:48.167Z [desafio-final] info: GET /transaction
+2020-11-25T03:14:54.117Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":12,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"+","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T03:15:15.141Z [desafio-final] info: GET /transaction
+2020-11-25T03:15:19.628Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":12,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T03:19:07.148Z [desafio-final] info: GET /transaction
+2020-11-25T03:19:13.677Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":12,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"+","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T03:26:20.640Z [desafio-final] info: GET /transaction
+2020-11-25T03:27:44.970Z [desafio-final] info: GET /transaction
+2020-11-25T03:27:49.071Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":12,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T03:27:51.164Z [desafio-final] info: GET /transaction
+2020-11-25T03:28:24.030Z [desafio-final] info: GET /transaction
+2020-11-25T03:28:27.991Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":12,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"+","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T03:28:30.111Z [desafio-final] info: GET /transaction
+2020-11-25T03:29:36.757Z [desafio-final] info: GET /transaction
+2020-11-25T03:29:41.161Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":12,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"-","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T03:29:43.258Z [desafio-final] info: GET /transaction
+2020-11-25T03:30:19.350Z [desafio-final] info: GET /transaction
+2020-11-25T03:30:23.871Z [desafio-final] info: PATCH /transaction - 5fbd86dcae6eba23148b36fe - {"_id":"5fbd86dcae6eba23148b36fe","description":"DELETE","value":12,"category":"DELETE","year":2018,"month":5,"day":1,"yearMonth":"2018-05","yearMonthDay":"2018-05-01","type":"+","lastModified":"2020-11-24T22:19:08.327Z","__v":0}
+2020-11-25T03:30:26.000Z [desafio-final] info: GET /transaction
+2020-11-25T03:38:22.862Z [desafio-final] info: GET /transaction
+2020-11-25T03:38:47.266Z [desafio-final] info: GET /transaction
+2020-11-25T03:40:48.225Z [desafio-final] info: GET /transaction

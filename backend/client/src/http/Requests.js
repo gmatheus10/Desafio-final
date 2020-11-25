@@ -12,6 +12,7 @@ async function getTransaction(period) {
 		const res = await axios.get(
 			`/api/transaction/findTransactions?period=${period}`
 		);
+
 		return res.data;
 	} catch (error) {
 		console.log(error);
@@ -27,5 +28,23 @@ async function postTransaction(transactionBody) {
 		console.log(error);
 	}
 }
+async function patchTransaction(id, transactionBody) {
+	try {
+		const jsonBody = transactionBody;
 
-export default { getPeriods, getTransaction, postTransaction };
+		const res = await axios.patch(
+			`/api/transaction/correctTransaction/${id}`,
+			jsonBody
+		);
+
+		return res;
+	} catch (error) {
+		console.log(error);
+	}
+}
+export default {
+	getPeriods,
+	getTransaction,
+	postTransaction,
+	patchTransaction,
+};
