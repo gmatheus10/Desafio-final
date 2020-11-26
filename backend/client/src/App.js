@@ -27,7 +27,12 @@ export default function App() {
 			setTransactions(tran);
 		})();
 	};
-
+	const handleStatusChange = async () => {
+		const dates = await endPoints.getPeriods();
+		setPeriods(dates);
+		const trans = await endPoints.getTransaction(periods);
+		setTransactions(trans);
+	};
 	return (
 		<div className={style.body}>
 			<header className={style.header}>
@@ -40,7 +45,11 @@ export default function App() {
 				load={loadSelect}
 			/>
 
-			<Transactions transactions={transactions} numberFormat={numberFormat} />
+			<Transactions
+				transactions={transactions}
+				numberFormat={numberFormat}
+				onStatusChange={handleStatusChange}
+			/>
 
 			<footer className={style.footer}>
 				Site made by: Gabriel Matheus Conceição Medeiros Nunes

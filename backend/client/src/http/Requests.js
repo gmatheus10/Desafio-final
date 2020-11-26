@@ -42,9 +42,18 @@ async function patchTransaction(id, transactionBody) {
 		console.log(error);
 	}
 }
+async function deleteTransaction(id) {
+	try {
+		const res = await axios.delete(`/api/transaction/deleteTransaction/${id}`);
+		return res;
+	} catch (error) {
+		console.log(error);
+	}
+}
 export default {
 	getPeriods,
 	getTransaction,
 	postTransaction,
 	patchTransaction,
+	deleteTransaction,
 };

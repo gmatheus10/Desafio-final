@@ -112,22 +112,29 @@ function Details(props) {
 		})();
 	};
 
+	const handleDeleteTransaction = async () => {
+		const res = await endPoints.deleteTransaction(_id);
+		setStatus(res.status);
+		console.log(status);
+	};
+
 	useEffect(() => {
-		setTimeout(() => {
-			if (status === 200) {
-				setPopup(!popup);
-				setStatus(500);
-				props.changeStatus(
-					(async () => {
-						return await endPoints.getTransaction(yearMonth);
-					})()
-				);
-			}
+		if (popup) {
+			setTimeout(() => {
+				if (status === 200) {
+					setPopup(false);
 
-			//
-		}, 2000);
+					props.changeStatus();
+					setStatus(500);
+				}
+			}, 2000);
+		} else if (!popup && status === 200) {
+			setPopup(false);
+			console.log("here");
+			props.changeStatus();
+			setStatus(500);
+		}
 	}, [status]);
-
 	return (
 		<li className={style.liContainer}>
 			<div className={style.allBorder}>
@@ -141,7 +148,7 @@ function Details(props) {
 				</div>
 				<div className={style.editDelete}>
 					<button onClick={handlePopupChange}>edit</button>
-					<button>delete</button>
+					<button onClick={handleDeleteTransaction}>delete</button>
 				</div>
 				{popup ? (
 					<Popup

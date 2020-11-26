@@ -4,7 +4,7 @@ import endPoints from "../../../http/Requests.js";
 import inputs from "./inputs.json";
 import Form from "../../Form/Form.js";
 import Popup from "../../Popup/Popup";
-function NewTransaction() {
+function NewTransaction(props) {
 	const [popup, setPopup] = useState(false);
 	const [status, setStatus] = useState(404);
 	//////////////////////////////////////////////////////////
@@ -48,6 +48,7 @@ function NewTransaction() {
 		};
 		(async () => {
 			const res = await endPoints.postTransaction(newForm);
+			props.changeStatus(res);
 			setStatus(res.status);
 		})();
 	};
@@ -56,8 +57,9 @@ function NewTransaction() {
 	useEffect(() => {
 		setTimeout(() => {
 			if (status === 200) {
-				setPopup(!popup);
+				setPopup(false);
 				setStatus(500);
+				props.changeStatus();
 			}
 
 			//

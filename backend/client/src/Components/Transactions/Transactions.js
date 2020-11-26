@@ -27,15 +27,15 @@ function Transactions(props) {
 		});
 		setFilter(filteredTransactions);
 	};
-	const onStatusChange = async (status) => {
-		setFilter(await status);
+	const onStatusChange = async () => {
+		props.onStatusChange();
 	};
 	///////////////////////////////////////////////////
 	return (
 		<div>
 			<div className={style.inputContainer}>
 				<div>
-					<NewTransaction />
+					<NewTransaction changeStatus={onStatusChange} />
 				</div>
 				<input
 					placeholder='Filtro de Transações'
