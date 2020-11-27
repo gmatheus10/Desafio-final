@@ -1,0 +1,41 @@
+[
+	{
+		"type": "radio",
+		"group": "group1",
+		"id": "despesa",
+		"label": "Despesa",
+		"defaultChecked": true
+	},
+	{
+		"type": "radio",
+		"group": "group1",
+		"id": "receita",
+		"label": "Receita",
+		"defaultChecked": false
+	},
+	{
+		"type": "text",
+		"id": "desc",
+		"required": true,
+		"label": "Descrição da transação"
+	},
+	{
+		"type": "text",
+		"id": "categ",
+		"required": true,
+		"label": "Categoria"
+	},
+	{
+		"type": "number",
+		"min": 0,
+		"id": "val",
+		"required": true,
+		"label": "Valor"
+	},
+	{
+		"type": "date",
+		"id": "date",
+		"required": true,
+		"label": "Data da transação"
+	}
+]

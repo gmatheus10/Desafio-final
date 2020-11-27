@@ -1,0 +1,16 @@
+.summaryContainer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 15px;
+	background-color: #dca958;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	flex-wrap: wrap;
+}
+span {
+	color: #8c1010;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 2vw;
+}

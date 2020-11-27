@@ -1,0 +1,36 @@
+.selectContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.select {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.selectB {
+	margin: 10px;
+	background-color: #38505c;
+	border: none;
+	color: #e69c31;
+	border-radius: 50%;
+	padding: 10px 15px;
+	text-align: center;
+	text-justify: center;
+	font-size: 16px;
+	font-weight: bold;
+	transition-duration: 0.2s;
+}
+.selectB:hover {
+	background-color: #8c1010;
+	color: white;
+}
+.selectPeriod {
+	background-color: #38505c;
+	font-size: 16px;
+	font-weight: bold;
+	color: #f7faf9;
+	border-color: #e6c38a;
+	border-radius: 10px;
+	width: 50vw;
+}

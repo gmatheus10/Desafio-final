@@ -1,0 +1,43 @@
+/* ///////////////////////////////////////////////////////////////////// */
+
+.insert {
+	background-color: #dca958;
+	border-color: #172b27;
+	font-size: 15px;
+	font-weight: bold;
+	margin-right: 3vw;
+	width: 90px;
+	color: #8c1010;
+	cursor: pointer;
+	border-radius: 10px;
+	transition-duration: 0.4s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.insert:hover {
+	background-color: #e69c31;
+}
+
+@media (max-width: 800px) {
+	input {
+		width: 90vw;
+	}
+
+	.title {
+		width: 85vw;
+	}
+	.title span {
+		font-size: 20px;
+	}
+	.closeMe {
+		width: 15vw;
+		margin: 0;
+	}
+	.closeMe button {
+		border: none;
+		border-radius: 5px;
+		font-size: 25px;
+		padding: 2vw 4vw 2vw 4vw;
+	}
+}

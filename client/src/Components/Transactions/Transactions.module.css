@@ -1,0 +1,23 @@
+.inputContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.input {
+	width: 50vw;
+	font-family: inherit;
+	border: 0;
+	border-bottom: 2px solid #e69c31;
+	outline: 0;
+	font-size: 16px;
+	color: white;
+	padding: 7px 0;
+	background: transparent;
+	transition: border-color 0.2s;
+}
+
+.ulDetails {
+	padding: 0;
+	margin-left: 8vw;
+	margin-right: 8vw;
+}
