@@ -147,8 +147,12 @@ function Details(props) {
 					{numberFormat.format(details.value)}
 				</div>
 				<div className={style.editDelete}>
-					<button onClick={handlePopupChange}>edit</button>
-					<button onClick={handleDeleteTransaction}>delete</button>
+					<button onClick={handlePopupChange} className={style.button}>
+						edit
+					</button>
+					<button onClick={handleDeleteTransaction} className={style.button}>
+						delete
+					</button>
 				</div>
 				{popup ? (
 					<Popup

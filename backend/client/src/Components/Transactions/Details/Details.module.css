@@ -54,7 +54,29 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-flow: column;
 	margin: 0 1vh 0 1vh;
+}
+
+.button {
+	background-color: #dca958;
+	border-color: #172b27;
+	font-size: 15px;
+	margin: 1vh;
+	padding: 1vh 1vw 1vh 1vw;
+	font-weight: bold;
+	margin-right: 3vw;
+	width: 10vw;
+	color: #8c1010;
+	cursor: pointer;
+	border-radius: 5px;
+	transition-duration: 0.4s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.button:hover {
+	background-color: #e69c31;
 }
 
 @media (max-width: 600px) {
@@ -68,5 +90,8 @@
 	.editDelete {
 		flex-direction: column;
 		justify-content: start;
+	}
+	.button {
+		width: 14vw;
 	}
 }
