@@ -4,26 +4,15 @@ import style from "./Details.module.css";
 import Form from "../../Form/Form.js";
 import endPoints from "../../../http/Requests.js";
 function Details(props) {
-	const {
-		category,
-		day,
-		description,
-		value,
-		_id,
-		numberFormat,
-		type,
-		yearMonth,
-		yearMonthDay,
-	} = props.properties;
+	const { _id, numberFormat, yearMonth } = props.properties;
+	const initial = props.properties;
+	const [details, setDetails] = useState({});
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	const [details, setDetails] = useState({
-		category,
-		day,
-		description,
-		value,
-		yearMonthDay,
-		type,
-	});
+	useEffect(() => {
+		setDetails(initial);
+	}, [initial]);
+
 	const inputs = [
 		{
 			type: "radio",
@@ -66,15 +55,22 @@ function Details(props) {
 		},
 	];
 	/////////////////////////////////////////////////////////////////////////////////////////////////////
-
+	const [filter, setFilter] = useState([]);
 	const [status, setStatus] = useState(404);
 	const [popup, setPopup] = useState(false);
 	const handlePopupChange = () => {
 		setPopup(!popup);
 	};
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	const handleEditTransaction = (event) => {
+	useEffect(() => {
+		setFilter(props.transactions);
+	}, [props.transactions]);
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	const handleEditTransaction = async (event) => {
 		event.preventDefault();
+
 		const despesa = event.target[0];
 		const receita = event.target[1];
 		const desc = event.target[2].value;
@@ -90,51 +86,61 @@ function Details(props) {
 		}
 
 		const ano = diaMesAno.slice(0, 4);
-
 		const mes = diaMesAno.slice(5, 7);
-
 		const dia = diaMesAno.slice(8);
 
 		const newForm = {
+			_id,
 			description: desc,
 			value: val,
 			category: categ,
 			day: dia,
 			type: tipo,
-			yearMonthDay: `${ano}-${mes}-${dia}`,
-
-			date: diaMesAno,
+			yearMonthDay: diaMesAno,
 		};
-		(async () => {
-			const res = await endPoints.patchTransaction(_id, newForm);
-			setStatus(res.status);
-			setDetails(newForm);
-		})();
+		const indexToEdit = filter.findIndex((el) => el._id === _id);
+		console.log(indexToEdit);
+		const newFilter = [...filter];
+		newFilter[indexToEdit] = newForm;
+		setFilter(newFilter);
+		const res = await endPoints.patchTransaction(_id, newForm);
+		console.log(res);
+		setStatus(res.status);
+		setDetails(newForm);
 	};
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	const handleDeleteTransaction = async () => {
+		let newFilter = filter.filter((el) => {
+			console.log(typeof el._id, typeof _id);
+			return el._id !== _id;
+		});
+		console.log(newFilter);
+		setFilter(newFilter);
 		const res = await endPoints.deleteTransaction(_id);
 		setStatus(res.status);
-		console.log(status);
+		console.log(res);
 	};
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	useEffect(() => {
 		if (popup) {
 			setTimeout(() => {
 				if (status === 200) {
 					setPopup(false);
-
-					props.changeStatus();
 					setStatus(500);
+					props.statusChange(filter);
 				}
 			}, 2000);
 		} else if (!popup && status === 200) {
 			setPopup(false);
-			console.log("here");
-			props.changeStatus();
 			setStatus(500);
+			console.log("here");
+			props.statusChange(filter);
 		}
 	}, [status]);
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	return (
 		<li className={style.liContainer}>
 			<div className={style.allBorder}>
