@@ -8,6 +8,7 @@ export default function App() {
 	const [periods, setPeriods] = useState([]);
 	const [transactions, setTransactions] = useState([]);
 	const [loadSelect, setLoadSelect] = useState(false);
+	const [singlePeriod, setSingle] = useState("");
 	const numberFormat = new Intl.NumberFormat("pt-BR", {
 		style: "currency",
 		currency: "BRL",
@@ -20,23 +21,17 @@ export default function App() {
 		})();
 	}, []);
 
-	const handlePeriodChange = (period) => {
-		(async () => {
-			const tran = await endPoints.getTransaction(period);
-
-			setTransactions(tran);
-		})();
-	};
-	const handleStatusChange = async () => {
-		const dates = await endPoints.getPeriods();
-		setPeriods(dates);
-		const trans = await endPoints.getTransaction(periods);
-		setTransactions(trans);
+	const handlePeriodChange = async (period) => {
+		setSingle(period);
+		console.log(singlePeriod);
+		const tran = await endPoints.getTransaction(period);
+		setTransactions(tran);
 	};
 	return (
 		<div className={style.body}>
 			<header className={style.header}>
-				<h1 className={style.title}>Desafio Final do Bootcamp Full Stack</h1>
+				<h1>Controle de Custos</h1>
+				<h2 className={style.title}>Desafio Final do Bootcamp Full Stack</h2>
 			</header>
 
 			<SelectPeriod
@@ -45,11 +40,7 @@ export default function App() {
 				load={loadSelect}
 			/>
 
-			<Transactions
-				transactions={transactions}
-				numberFormat={numberFormat}
-				onStatusChange={handleStatusChange}
-			/>
+			<Transactions transactions={transactions} numberFormat={numberFormat} />
 
 			<footer className={style.footer}>
 				Site made by: Gabriel Matheus Conceição Medeiros Nunes

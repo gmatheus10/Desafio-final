@@ -8,9 +8,7 @@ import NewTransaction from "./NewTransaction/NewTransaction";
 function Transactions(props) {
 	const { transactions, numberFormat } = props;
 	const [filter, setFilter] = useState([]);
-
 	///////////////////////////////////////////////////
-
 	useEffect(() => {
 		setFilter(transactions);
 	}, [transactions]);
@@ -27,15 +25,20 @@ function Transactions(props) {
 		});
 		setFilter(filteredTransactions);
 	};
-	const onStatusChange = async () => {
-		props.onStatusChange();
+	const onStatusChange = async (newFilter) => {
+		console.log(newFilter);
+		setFilter(newFilter);
 	};
 	///////////////////////////////////////////////////
 	return (
 		<div>
 			<div className={style.inputContainer}>
 				<div>
-					<NewTransaction changeStatus={onStatusChange} />
+					<NewTransaction
+						changeStatus={onStatusChange}
+						singlePeriod={props.singlePeriod}
+						transactions={filter}
+					/>
 				</div>
 				<input
 					placeholder='Filtro de Transações'
@@ -74,6 +77,8 @@ function Transactions(props) {
 										type,
 									}}
 									key={_id}
+									transactions={filter}
+									statusChange={onStatusChange}
 								/>
 							);
 						}

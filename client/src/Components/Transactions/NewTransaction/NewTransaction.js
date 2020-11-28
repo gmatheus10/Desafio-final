@@ -7,12 +7,17 @@ import Popup from "../../Popup/Popup";
 function NewTransaction(props) {
 	const [popup, setPopup] = useState(false);
 	const [status, setStatus] = useState(404);
+	const [filter, setFilter] = useState([]);
+
+	useEffect(() => {
+		setFilter(props.transactions);
+	}, [props.transactions]);
 	//////////////////////////////////////////////////////////
 	const handlePopupChange = () => {
 		setPopup(!popup);
 	};
 	///////////////////////////////////////////////////////
-	const handleNewTransaction = (event) => {
+	const handleNewTransaction = async (event) => {
 		event.preventDefault();
 		const despesa = event.target[0];
 		const receita = event.target[1];
@@ -20,7 +25,7 @@ function NewTransaction(props) {
 		const categ = event.target[3].value;
 		const val = event.target[4].value;
 		const diaMesAno = event.target[5].value;
-
+		console.log(event.target);
 		let tipo = "*";
 		if (despesa.checked) {
 			tipo = "-";
@@ -44,13 +49,21 @@ function NewTransaction(props) {
 			yearMonth: `${ano}-${mes}`,
 			yearMonthDay: `${ano}-${mes}-${dia}`,
 			type: tipo,
-			date: diaMesAno,
 		};
-		(async () => {
-			const res = await endPoints.postTransaction(newForm);
-			props.changeStatus(res);
+
+		const res = await endPoints.postTransaction(newForm);
+		// props.changeStatus(res);
+
+		const newFilter = [...filter];
+		const finalForm = { ...newForm, _id: res.data._id };
+		newFilter.push(finalForm);
+		if (filter.length > 0) {
+			newFilter.sort((a, b) => a.yearMonthDay.localeCompare(b.yearMonthDay));
+			console.log(newFilter);
+			setFilter(newFilter);
+
 			setStatus(res.status);
-		})();
+		}
 	};
 	////////////////////////////////////////////////////
 
@@ -59,11 +72,11 @@ function NewTransaction(props) {
 			if (status === 200) {
 				setPopup(false);
 				setStatus(500);
-				props.changeStatus();
+				if (filter.length > 0) {
+					props.changeStatus(filter);
+				}
 			}
-
-			//
-		}, 2000);
+		}, 500);
 	}, [status]);
 	////////////////////////////////////////////////////////////
 

@@ -164,7 +164,7 @@ const remove = async (req, res) => {
 				if (err) {
 					throw new Error("Não foi possível deletar");
 				} else {
-					res.send("deleted successfully");
+					res.send(id);
 					logger.info(`DELETE /transaction - ${id}`);
 				}
 			});

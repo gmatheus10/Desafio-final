@@ -6,6 +6,7 @@ function SelectPeriod(props) {
 		if (string !== "") {
 			props.onPeriodChange(string);
 		} else {
+			event.preventDefault();
 			props.onPeriodChange(event.target.value);
 		}
 	};
@@ -38,7 +39,7 @@ function SelectPeriod(props) {
 				</button>
 
 				{props.load ? (
-					<select onChange={passPeriod} className={style.selectPeriod} required>
+					<select onInput={passPeriod} className={style.selectPeriod} required>
 						<option defaultValue=''>Selecione um período</option>
 						{props.periods.map((el) => (
 							<option key={el}>{el}</option>
