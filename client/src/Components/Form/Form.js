@@ -14,6 +14,7 @@ function Form(props) {
 						<input
 							type={el.type}
 							name={el.group ? el.group : el.type}
+							min={el.type === "number" ? 0 : null}
 							placeholder={el.type === "text" ? el.label : null}
 							defaultChecked={el.type === "radio" ? el.checked : null}
 							defaultValue={el.value ? el.value : null}
