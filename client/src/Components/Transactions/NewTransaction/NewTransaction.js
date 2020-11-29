@@ -70,6 +70,7 @@ function NewTransaction(props) {
 				if (filter.length > 0) {
 					props.changeStatus(filter);
 				}
+				props.newTransaction();
 			}
 		}, 500);
 	}, [status]);

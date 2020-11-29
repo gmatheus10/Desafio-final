@@ -8,23 +8,22 @@ export default function App() {
 	const [periods, setPeriods] = useState([]);
 	const [transactions, setTransactions] = useState([]);
 	const [loadSelect, setLoadSelect] = useState(false);
-	const [singlePeriod, setSingle] = useState("");
 	const numberFormat = new Intl.NumberFormat("pt-BR", {
 		style: "currency",
 		currency: "BRL",
 	});
-	useEffect(() => {
-		(async () => {
-			const data = await endPoints.getPeriods();
-			setPeriods(data);
-			setLoadSelect(true);
-		})();
+	useEffect(async () => {
+		await handleTransactionChange();
 	}, []);
 
 	const handlePeriodChange = async (period) => {
-		setSingle(period);
 		const tran = await endPoints.getTransaction(period);
 		setTransactions(tran);
+	};
+	const handleTransactionChange = async () => {
+		const data = await endPoints.getPeriods();
+		setPeriods(data);
+		setLoadSelect(true);
 	};
 	return (
 		<div className={style.body}>
@@ -39,7 +38,11 @@ export default function App() {
 				load={loadSelect}
 			/>
 
-			<Transactions transactions={transactions} numberFormat={numberFormat} />
+			<Transactions
+				transactions={transactions}
+				numberFormat={numberFormat}
+				transactionChange={handleTransactionChange}
+			/>
 
 			<footer className={style.footer}>
 				Site made by: Gabriel Matheus Conceição Medeiros Nunes

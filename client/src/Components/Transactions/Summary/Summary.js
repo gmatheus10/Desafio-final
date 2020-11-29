@@ -23,11 +23,11 @@ function Summary(props) {
 			: 0;
 		const balance = revenue - expense;
 		if (type === "+") {
-			return revenue;
+			return numberFormat.format(revenue);
 		} else if (type === "-") {
-			return expense;
+			return numberFormat.format(expense);
 		} else {
-			return balance;
+			return numberFormat.format(balance);
 		}
 	};
 

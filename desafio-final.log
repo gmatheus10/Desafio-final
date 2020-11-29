@@ -126,3 +126,43 @@
   "lastModified": "2020-11-29T02:27:47.876Z",
   "__v": 0
 }
+2020-11-29T16:07:29.131Z [desafio-final] info: GET /transaction
+2020-11-29T16:09:00.071Z [desafio-final] info: GET /transaction
+2020-11-29T22:16:52.868Z [desafio-final] info: GET /transaction
+2020-11-29T22:29:46.833Z [desafio-final] info: GET /transaction
+2020-11-29T22:29:59.140Z [desafio-final] info: POST /transaction - {
+  "_id": "5fc420e703e0d41578458680",
+  "description": "111",
+  "value": 1515,
+  "category": "1414",
+  "year": 2017,
+  "month": 10,
+  "day": 28,
+  "yearMonth": "2017-10",
+  "yearMonthDay": "2017-10-28",
+  "type": "-",
+  "lastModified": "2020-11-29T22:29:59.067Z",
+  "__v": 0
+}
+2020-11-29T22:30:42.010Z [desafio-final] info: GET /transaction
+2020-11-29T22:30:43.133Z [desafio-final] info: DELETE /transaction - 5fc420e703e0d41578458680
+2020-11-29T22:30:47.110Z [desafio-final] info: GET /transaction
+2020-11-29T22:30:58.978Z [desafio-final] info: POST /transaction - {
+  "_id": "5fc4212203e0d41578458681",
+  "description": "11111111111111",
+  "value": 414141,
+  "category": "41414141",
+  "year": 2017,
+  "month": 11,
+  "day": 3,
+  "yearMonth": "2017-11",
+  "yearMonthDay": "2017-11-03",
+  "type": "-",
+  "lastModified": "2020-11-29T22:30:58.431Z",
+  "__v": 0
+}
+2020-11-29T22:31:04.099Z [desafio-final] info: GET /transaction
+2020-11-29T22:31:08.085Z [desafio-final] info: DELETE /transaction - 5fc4212203e0d41578458681
+2020-11-29T22:32:54.837Z [desafio-final] info: GET /transaction
+2020-11-29T22:32:55.912Z [desafio-final] info: DELETE /transaction - 5fc307234cb6f2184038a2f1
+2020-11-29T22:32:59.935Z [desafio-final] info: GET /transaction

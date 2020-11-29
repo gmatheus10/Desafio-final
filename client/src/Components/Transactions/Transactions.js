@@ -12,7 +12,6 @@ function Transactions(props) {
 	useEffect(() => {
 		setFilter(transactions);
 	}, [transactions]);
-	console.log(transactions);
 	///////////////////////////////////////////////////
 	const handleTransactionFilter = (event) => {
 		let filteredTransactions = transactions.filter((el) => {
@@ -27,7 +26,9 @@ function Transactions(props) {
 	};
 	const onStatusChange = async (newFilter) => {
 		setFilter(newFilter);
+		props.transactionChange();
 	};
+
 	///////////////////////////////////////////////////
 	return (
 		<div>
@@ -37,6 +38,7 @@ function Transactions(props) {
 						changeStatus={onStatusChange}
 						singlePeriod={props.singlePeriod}
 						transactions={filter}
+						newTransaction={props.transactionChange}
 					/>
 				</div>
 				<input
