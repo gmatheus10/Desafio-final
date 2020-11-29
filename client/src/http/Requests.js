@@ -12,7 +12,6 @@ async function getTransaction(period) {
 		const res = await axios.get(
 			`/api/transaction/findTransactions?period=${period}`
 		);
-
 		return res.data;
 	} catch (error) {
 		console.log(error);

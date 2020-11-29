@@ -23,7 +23,6 @@ export default function App() {
 
 	const handlePeriodChange = async (period) => {
 		setSingle(period);
-		console.log(singlePeriod);
 		const tran = await endPoints.getTransaction(period);
 		setTransactions(tran);
 	};

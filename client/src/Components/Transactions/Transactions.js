@@ -12,6 +12,7 @@ function Transactions(props) {
 	useEffect(() => {
 		setFilter(transactions);
 	}, [transactions]);
+	console.log(transactions);
 	///////////////////////////////////////////////////
 	const handleTransactionFilter = (event) => {
 		let filteredTransactions = transactions.filter((el) => {

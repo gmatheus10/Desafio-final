@@ -25,14 +25,12 @@ function NewTransaction(props) {
 		const categ = event.target[3].value;
 		const val = event.target[4].value;
 		const diaMesAno = event.target[5].value;
-		console.log(event.target);
 		let tipo = "*";
 		if (despesa.checked) {
 			tipo = "-";
 		} else if (receita.checked) {
 			tipo = "+";
 		}
-
 		const ano = diaMesAno.slice(0, 4);
 
 		const mes = diaMesAno.slice(5, 7);
@@ -52,17 +50,14 @@ function NewTransaction(props) {
 		};
 
 		const res = await endPoints.postTransaction(newForm);
-		// props.changeStatus(res);
-
+		setStatus(res.status);
 		const newFilter = [...filter];
 		const finalForm = { ...newForm, _id: res.data._id };
 		newFilter.push(finalForm);
 		if (filter.length > 0) {
 			newFilter.sort((a, b) => a.yearMonthDay.localeCompare(b.yearMonthDay));
-			console.log(newFilter);
-			setFilter(newFilter);
 
-			setStatus(res.status);
+			setFilter(newFilter);
 		}
 	};
 	////////////////////////////////////////////////////
