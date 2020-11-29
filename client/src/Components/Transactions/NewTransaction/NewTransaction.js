@@ -19,6 +19,7 @@ function NewTransaction(props) {
 	///////////////////////////////////////////////////////
 	const handleNewTransaction = async (event) => {
 		event.preventDefault();
+		console.log(event.target);
 		const despesa = event.target[0];
 		const receita = event.target[1];
 		const desc = event.target[2].value;

@@ -12,8 +12,10 @@ export default function App() {
 		style: "currency",
 		currency: "BRL",
 	});
-	useEffect(async () => {
-		await handleTransactionChange();
+	useEffect(() => {
+		(async () => {
+			await handleTransactionChange();
+		})();
 	}, []);
 
 	const handlePeriodChange = async (period) => {

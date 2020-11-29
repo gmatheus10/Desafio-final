@@ -49,14 +49,14 @@ label {
 	justify-self: center;
 }
 .despesa input {
-	width: 0;
+	width: 2vw;
 }
 .despesa label {
 	padding-left: 2vw;
 	font-size: 16px;
 }
 .receita input {
-	width: 0;
+	width: 2vw;
 }
 .receita label {
 	padding-left: 2vw;
