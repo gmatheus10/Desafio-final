@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Summary.module.css";
 
 function Summary(props) {
-	const { transactions } = props;
+	const { transactions, numberFormat } = props;
 
 	const getProfit = (type) => {
 		const expenseRes = transactions.filter((el) => {
@@ -13,12 +13,12 @@ function Summary(props) {
 		});
 		const expense = expenseRes.length
 			? expenseRes.reduce((acc, cur) => {
-					return acc + cur.value;
+					return acc + parseFloat(cur.value);
 			  }, 0)
 			: 0;
 		const revenue = revenueRes.length
 			? revenueRes.reduce((acc, cur) => {
-					return acc + cur.value;
+					return acc + parseFloat(cur.value);
 			  }, 0)
 			: 0;
 		const balance = revenue - expense;

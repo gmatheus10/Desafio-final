@@ -13,7 +13,6 @@ function Transactions(props) {
 		setFilter(transactions);
 	}, [transactions]);
 	///////////////////////////////////////////////////
-
 	const handleTransactionFilter = (event) => {
 		let filteredTransactions = transactions.filter((el) => {
 			return (
@@ -26,7 +25,6 @@ function Transactions(props) {
 		setFilter(filteredTransactions);
 	};
 	const onStatusChange = async (newFilter) => {
-		console.log(newFilter);
 		setFilter(newFilter);
 	};
 	///////////////////////////////////////////////////
@@ -47,7 +45,7 @@ function Transactions(props) {
 					onInput={handleTransactionFilter}></input>
 			</div>
 			<div>
-				<Summary transactions={filter} />
+				<Summary transactions={filter} numberFormat={numberFormat} />
 			</div>
 			<div>
 				<ul className={style.ulDetails}>
@@ -71,11 +69,12 @@ function Transactions(props) {
 										description,
 										value,
 										_id,
-										numberFormat,
+
 										yearMonthDay,
 										yearMonth,
 										type,
 									}}
+									numberFormat={numberFormat}
 									key={_id}
 									transactions={filter}
 									statusChange={onStatusChange}

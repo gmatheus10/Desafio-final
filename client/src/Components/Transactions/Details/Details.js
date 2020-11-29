@@ -4,11 +4,11 @@ import style from "./Details.module.css";
 import Form from "../../Form/Form.js";
 import endPoints from "../../../http/Requests.js";
 function Details(props) {
-	const { _id, numberFormat, yearMonth } = props.properties;
+	const { _id } = props.properties;
+	const { numberFormat } = props;
 	const initial = props.properties;
 	const [details, setDetails] = useState({});
 	/////////////////////////////////////////////////////////////////////////////////////////////////////
-
 	useEffect(() => {
 		setDetails(initial);
 	}, [initial]);
@@ -47,20 +47,23 @@ function Details(props) {
 			label: "Valor",
 			value: details.value,
 		},
+
 		{
 			type: "date",
 			id: "date",
 			label: "Data da transação",
-			value: details.yearMonthDay,
+			value: `${details.yearMonthDay}`,
 		},
 	];
 	/////////////////////////////////////////////////////////////////////////////////////////////////////
 	const [filter, setFilter] = useState([]);
 	const [status, setStatus] = useState(404);
 	const [popup, setPopup] = useState(false);
+
 	const handlePopupChange = () => {
 		setPopup(!popup);
 	};
+
 	/////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	useEffect(() => {
@@ -96,15 +99,15 @@ function Details(props) {
 			category: categ,
 			day: dia,
 			type: tipo,
-			yearMonthDay: diaMesAno,
+			yearMonthDay: `${ano}-${mes}-${dia}`,
 		};
 		const indexToEdit = filter.findIndex((el) => el._id === _id);
-		console.log(indexToEdit);
+
 		const newFilter = [...filter];
 		newFilter[indexToEdit] = newForm;
 		setFilter(newFilter);
 		const res = await endPoints.patchTransaction(_id, newForm);
-		console.log(res);
+
 		setStatus(res.status);
 		setDetails(newForm);
 	};
@@ -112,14 +115,12 @@ function Details(props) {
 
 	const handleDeleteTransaction = async () => {
 		let newFilter = filter.filter((el) => {
-			console.log(typeof el._id, typeof _id);
 			return el._id !== _id;
 		});
-		console.log(newFilter);
+
 		setFilter(newFilter);
 		const res = await endPoints.deleteTransaction(_id);
 		setStatus(res.status);
-		console.log(res);
 	};
 	/////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -131,11 +132,11 @@ function Details(props) {
 					setStatus(500);
 					props.statusChange(filter);
 				}
-			}, 2000);
+			}, 500);
 		} else if (!popup && status === 200) {
 			setPopup(false);
 			setStatus(500);
-			console.log("here");
+
 			props.statusChange(filter);
 		}
 	}, [status]);
