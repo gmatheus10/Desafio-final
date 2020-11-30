@@ -199,3 +199,113 @@
 }
 2020-11-29T23:07:50.056Z [desafio-final] info: GET /transaction
 2020-11-29T23:07:56.712Z [desafio-final] info: DELETE /transaction - 5fc429b278a2fd08bcca1655
+2020-11-29T23:31:24.512Z [desafio-final] info: GET /transaction
+2020-11-29T23:42:02.241Z [desafio-final] info: POST /transaction - {
+  "_id": "5fc431ca8721c02c34525e11",
+  "description": "uohiuh",
+  "value": 234567,
+  "category": "uhiuhiu",
+  "year": 1996,
+  "month": 9,
+  "day": 14,
+  "yearMonth": "1996-09",
+  "yearMonthDay": "1996-09-14",
+  "type": "-",
+  "lastModified": "2020-11-29T23:42:02.164Z",
+  "__v": 0
+}
+2020-11-29T23:42:04.703Z [desafio-final] info: GET /transaction
+2020-11-29T23:42:23.420Z [desafio-final] info: POST /transaction - {
+  "_id": "5fc431df8721c02c34525e12",
+  "description": "2345678",
+  "value": 456789,
+  "category": "0987654",
+  "year": 1996,
+  "month": 9,
+  "day": 14,
+  "yearMonth": "1996-09",
+  "yearMonthDay": "1996-09-14",
+  "type": "-",
+  "lastModified": "2020-11-29T23:42:23.349Z",
+  "__v": 0
+}
+2020-11-29T23:42:59.925Z [desafio-final] info: GET /transaction
+2020-11-29T23:43:03.098Z [desafio-final] info: DELETE /transaction - 5fc431df8721c02c34525e12
+2020-11-30T00:02:13.217Z [desafio-final] info: POST /transaction - {
+  "_id": "5fc436848721c02c34525e13",
+  "description": "123123",
+  "value": 14141414,
+  "category": "414141",
+  "year": 1996,
+  "month": 9,
+  "day": 14,
+  "yearMonth": "1996-09",
+  "yearMonthDay": "1996-09-14",
+  "type": "-",
+  "lastModified": "2020-11-30T00:02:12.610Z",
+  "__v": 0
+}
+2020-11-30T00:02:39.976Z [desafio-final] info: GET /transaction
+2020-11-30T00:02:41.871Z [desafio-final] info: DELETE /transaction - 5fc436848721c02c34525e13
+2020-11-30T00:02:51.510Z [desafio-final] info: POST /transaction - {
+  "_id": "5fc436ab8721c02c34525e14",
+  "description": "qweqwe",
+  "value": 141414,
+  "category": "qweqweq",
+  "year": 1996,
+  "month": 9,
+  "day": 14,
+  "yearMonth": "1996-09",
+  "yearMonthDay": "1996-09-14",
+  "type": "-",
+  "lastModified": "2020-11-30T00:02:51.417Z",
+  "__v": 0
+}
+2020-11-30T00:03:02.007Z [desafio-final] info: GET /transaction
+2020-11-30T00:03:03.552Z [desafio-final] info: DELETE /transaction - 5fc436ab8721c02c34525e14
+2020-11-30T00:03:14.500Z [desafio-final] info: POST /transaction - {
+  "_id": "5fc436c28721c02c34525e15",
+  "description": "qwrqwr",
+  "value": 1414,
+  "category": "qwrqwr",
+  "year": 1996,
+  "month": 9,
+  "day": 14,
+  "yearMonth": "1996-09",
+  "yearMonthDay": "1996-09-14",
+  "type": "-",
+  "lastModified": "2020-11-30T00:03:14.417Z",
+  "__v": 0
+}
+2020-11-30T00:07:34.211Z [desafio-final] info: GET /transaction
+2020-11-30T00:07:50.556Z [desafio-final] info: POST /transaction - {
+  "_id": "5fc437d68721c02c34525e16",
+  "description": "fafasfasf",
+  "value": 124124,
+  "category": "asfasfasf",
+  "year": 1996,
+  "month": 9,
+  "day": 14,
+  "yearMonth": "1996-09",
+  "yearMonthDay": "1996-09-14",
+  "type": "-",
+  "lastModified": "2020-11-30T00:07:50.486Z",
+  "__v": 0
+}
+2020-11-30T00:08:15.411Z [desafio-final] info: GET /transaction
+2020-11-30T00:08:16.395Z [desafio-final] info: DELETE /transaction - 5fc431ca8721c02c34525e11
+2020-11-30T00:08:17.706Z [desafio-final] info: DELETE /transaction - 5fc436c28721c02c34525e15
+2020-11-30T00:08:28.515Z [desafio-final] info: POST /transaction - {
+  "_id": "5fc437fc8721c02c34525e17",
+  "description": "asfasf",
+  "value": 141414,
+  "category": "asfasfa",
+  "year": 1996,
+  "month": 9,
+  "day": 14,
+  "yearMonth": "1996-09",
+  "yearMonthDay": "1996-09-14",
+  "type": "-",
+  "lastModified": "2020-11-30T00:08:28.436Z",
+  "__v": 0
+}
